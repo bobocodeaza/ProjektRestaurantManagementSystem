@@ -1,4 +1,4 @@
-package com.example.restaurant.model;
+package com.example.RestaurantManagement.model;
 
 public class Chef extends Staff {
     private String specialization;

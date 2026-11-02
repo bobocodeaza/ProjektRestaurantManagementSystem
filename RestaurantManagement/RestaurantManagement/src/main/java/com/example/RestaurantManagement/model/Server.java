@@ -1,4 +1,4 @@
-package com.example.restaurant.model;
+package com.example.RestaurantManagement.model;
 
 public class Server extends Staff {
     private String designation;

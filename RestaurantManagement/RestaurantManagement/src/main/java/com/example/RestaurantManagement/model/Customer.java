@@ -1,16 +1,19 @@
-package com.example.restaurant.model;
+package com.example.RestaurantManagement.model;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Customer {
     private String id;
     private String name;
-    private String phoneNumber; // Extindere cerută
+    private String phoneNumber;
     private List<String> orders;
 
     public Customer() { this.orders = new ArrayList<>(); }
     public Customer(String id, String name, String phoneNumber) {
-        this.id = id; this.name = name; this.phoneNumber = phoneNumber;
+        this.id = id;
+        this.name = name;
+        this.phoneNumber = phoneNumber;
         this.orders = new ArrayList<>();
     }
 

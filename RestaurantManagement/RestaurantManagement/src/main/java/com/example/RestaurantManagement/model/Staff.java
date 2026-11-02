@@ -1,4 +1,4 @@
-package com.example.restaurant.model;
+package com.example.RestaurantManagement.model;
 
 public abstract class Staff {
     private String id;

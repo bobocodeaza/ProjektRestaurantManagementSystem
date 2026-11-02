@@ -1,4 +1,4 @@
-package com.example.restaurant.model;
+package com.example.RestaurantManagement.model;
 
 public class OrderLine {
     private String id;
@@ -7,8 +7,11 @@ public class OrderLine {
 
     public OrderLine() {}
     public OrderLine(String id, String menuItemId, double quantity) {
-        this.id = id; this.menuItemId = menuItemId; this.quantity = quantity;
+        this.id = id;
+        this.menuItemId = menuItemId;
+        this.quantity = quantity;
     }
+
     public String getId() { return id; }
     public void setId(String id) { this.id = id; }
     public String getMenuItemId() { return menuItemId; }

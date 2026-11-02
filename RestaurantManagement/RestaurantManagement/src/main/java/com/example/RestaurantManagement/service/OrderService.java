@@ -1,7 +1,9 @@
-package com.example.restaurant.service;
-import com.example.restaurant.model.*;
-import com.example.restaurant.repository.*;
+package com.example.RestaurantManagement.service;
+
+import com.example.RestaurantManagement.model.*;
+import com.example.RestaurantManagement.repository.*;
 import org.springframework.stereotype.Service;
+
 import java.util.UUID;
 
 @Service
@@ -31,6 +33,7 @@ public class OrderService {
     public Bill generateBill(String orderId) {
         Order order = orderRepository.findById(orderId);
         if (order == null) return null;
+
         double total = 0.0;
         for (OrderLine line : order.getOrderLines()) {
             MenuItem item = menuItemRepository.findById(line.getMenuItemId());

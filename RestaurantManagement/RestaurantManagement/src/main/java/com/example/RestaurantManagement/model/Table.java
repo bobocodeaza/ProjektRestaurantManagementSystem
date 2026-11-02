@@ -1,18 +1,22 @@
-package com.example.restaurant.model;
+package com.example.RestaurantManagement.model;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class Table {
     private String id;
     private int number;
-    private String occupiedStatus; // "Free/Occupied"
-    private int capacity; // Extindere cerută
+    private String occupiedStatus;
+    private int capacity;
     private List<String> orders;
 
     public Table() { this.orders = new ArrayList<>(); }
     public Table(String id, int number, String occupiedStatus, int capacity) {
-        this.id = id; this.number = number; this.occupiedStatus = occupiedStatus;
-        this.capacity = capacity; this.orders = new ArrayList<>();
+        this.id = id;
+        this.number = number;
+        this.occupiedStatus = occupiedStatus;
+        this.capacity = capacity;
+        this.orders = new ArrayList<>();
     }
 
     public String getId() { return id; }

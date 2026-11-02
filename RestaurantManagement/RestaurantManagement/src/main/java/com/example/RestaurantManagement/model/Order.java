@@ -1,4 +1,5 @@
-package com.example.restaurant.model;
+package com.example.RestaurantManagement.model;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -6,7 +7,7 @@ public class Order {
     private String id;
     private String customerId;
     private String tableId;
-    private String status; // "Open/Closed"
+    private String status;
     private List<OrderLine> orderLines;
     private List<String> assignments;
 
@@ -14,9 +15,14 @@ public class Order {
         this.orderLines = new ArrayList<>();
         this.assignments = new ArrayList<>();
     }
+
     public Order(String id, String customerId, String tableId, String status) {
-        this.id = id; this.customerId = customerId; this.tableId = tableId; this.status = status;
-        this.orderLines = new ArrayList<>(); this.assignments = new ArrayList<>();
+        this.id = id;
+        this.customerId = customerId;
+        this.tableId = tableId;
+        this.status = status;
+        this.orderLines = new ArrayList<>();
+        this.assignments = new ArrayList<>();
     }
 
     public String getId() { return id; }

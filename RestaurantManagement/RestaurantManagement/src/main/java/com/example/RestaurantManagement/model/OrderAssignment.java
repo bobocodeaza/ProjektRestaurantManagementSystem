@@ -1,3 +1,5 @@
+package com.example.RestaurantManagement.model;
+
 public class OrderAssignment {
     private String id;
     private String orderId;

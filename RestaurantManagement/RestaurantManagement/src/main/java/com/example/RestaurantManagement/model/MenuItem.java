@@ -1,10 +1,10 @@
-package com.example.restaurant.model;
+package com.example.RestaurantManagement.model;
 
 public class MenuItem {
     private String id;
     private String name;
     private double price;
-    private String category; // Extindere cerută
+    private String category;
 
     public MenuItem() {}
     public MenuItem(String id, String name, double price, String category) {
