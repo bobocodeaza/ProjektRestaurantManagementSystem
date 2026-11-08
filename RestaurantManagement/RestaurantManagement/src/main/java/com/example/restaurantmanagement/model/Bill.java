@@ -1,17 +1,12 @@
-package com.example.RestaurantManagement.model;
-
+package com.example.restaurantmanagement.model;
 public class Bill {
     private String id;
     private String orderId;
     private double totalAmount;
-
     public Bill() {}
     public Bill(String id, String orderId, double totalAmount) {
-        this.id = id;
-        this.orderId = orderId;
-        this.totalAmount = totalAmount;
+        this.id = id; this.orderId = orderId; this.totalAmount = totalAmount;
     }
-
     public String getId() { return id; }
     public void setId(String id) { this.id = id; }
     public String getOrderId() { return orderId; }

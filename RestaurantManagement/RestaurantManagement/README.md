@@ -8,7 +8,7 @@ The application currently utilizes an In-Memory data storage strategy (without a
 
 ## Application Architecture (Layered Architecture)
 
-The project is organized under the primary package `com.example.RestaurantManagement` and is divided into the following layers:
+The project is organized under the primary package `restaurantmanagement` and is divided into the following layers:
 
 1. **`model`**
     - Contains the domain entities extracted directly from the UML diagram:
@@ -61,7 +61,7 @@ In accordance with the project specification, 1-2 new properties were added to 3
 2. Open the project in IntelliJ IDEA as a Maven project.
 3. Allow Maven to download the required dependencies specified in `pom.xml`.
 4. Run the main class:
-   `src/main/java/com/example/RestaurantManagement/RestaurantApplication.java`
+   `restaurantmanagement`
 5. Open a web browser and navigate to:
    ```
    http://localhost:8080/hello

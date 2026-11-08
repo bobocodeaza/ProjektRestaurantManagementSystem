@@ -1,15 +1,9 @@
-package com.example.RestaurantManagement.model;
-
+package com.example.restaurantmanagement.model;
 public abstract class Staff {
     private String id;
     private String name;
-
     public Staff() {}
-    public Staff(String id, String name) {
-        this.id = id;
-        this.name = name;
-    }
-
+    public Staff(String id, String name) { this.id = id; this.name = name; }
     public String getId() { return id; }
     public void setId(String id) { this.id = id; }
     public String getName() { return name; }

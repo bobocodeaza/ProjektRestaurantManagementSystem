@@ -1,17 +1,12 @@
-package com.example.RestaurantManagement.model;
-
+package com.example.restaurantmanagement.model;
 public class OrderLine {
     private String id;
     private String menuItemId;
     private double quantity;
-
     public OrderLine() {}
     public OrderLine(String id, String menuItemId, double quantity) {
-        this.id = id;
-        this.menuItemId = menuItemId;
-        this.quantity = quantity;
+        this.id = id; this.menuItemId = menuItemId; this.quantity = quantity;
     }
-
     public String getId() { return id; }
     public void setId(String id) { this.id = id; }
     public String getMenuItemId() { return menuItemId; }
