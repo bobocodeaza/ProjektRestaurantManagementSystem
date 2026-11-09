@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>New MenuItem</title></head>
+<body>
+    <h1>Create MenuItem</h1>
+    <form th:action="@{/menuitems}" method="post" th:object="${item}">
+        <label>Name:</label><input type="text" th:field="*{name}" required/><br/><br/><label>Price:</label><input type="number" th:field="*{price}" required/><br/><br/><label>Category:</label><input type="text" th:field="*{category}" required/><br/><br/>
+        <button type="submit">Save</button>
+    </form>
+    <br/><a th:href="@{/menuitems}">Cancel</a>
+</body>
+</html>

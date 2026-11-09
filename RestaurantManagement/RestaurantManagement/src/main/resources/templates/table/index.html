@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Table List</title></head>
+<body>
+    <h1>Table Management</h1>
+    <a th:href="@{/tables/new}">Create New Table</a><br/><br/>
+    <table border="1">
+        <tr><th>ID</th><th>Table Number</th><th>Capacity</th><th>Status (FREE/OCCUPIED)</th><th>Actions</th></tr>
+        <tr th:each="item : ${tables}">
+            <td th:text="${item.id}"></td><td th:text="${item.number}"></td><td th:text="${item.capacity}"></td><td th:text="${item.occupiedStatus}"></td>
+            <td>
+                <form th:action="@{/tables/{id}/delete(id=${item.id})}" method="post">
+                    <button type="submit">Delete</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <br/><a href="/">Back to Home</a>
+</body>
+</html>

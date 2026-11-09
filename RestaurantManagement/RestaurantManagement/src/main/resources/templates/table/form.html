@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>New Table</title></head>
+<body>
+    <h1>Create Table</h1>
+    <form th:action="@{/tables}" method="post" th:object="${table}">
+        <label>Table Number:</label><input type="number" th:field="*{number}" required/><br/><br/><label>Capacity:</label><input type="number" th:field="*{capacity}" required/><br/><br/><label>Status (FREE/OCCUPIED):</label><input type="text" th:field="*{occupiedStatus}" required/><br/><br/>
+        <button type="submit">Save</button>
+    </form>
+    <br/><a th:href="@{/tables}">Cancel</a>
+</body>
+</html>

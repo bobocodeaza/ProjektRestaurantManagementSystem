@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Orders List</title></head>
+<body>
+    <h1>Orders Management</h1>
+    <a th:href="@{/orders/new}">Create New Order</a><br/><br/>
+    <table border="1">
+        <tr><th>ID</th><th>Customer ID</th><th>Table ID</th><th>Status</th><th>Actions</th></tr>
+        <tr th:each="item : ${orders}">
+            <td th:text="${item.id}"></td>
+            <td th:text="${item.customerId}"></td>
+            <td th:text="${item.tableId}"></td>
+            <td th:text="${item.status}"></td>
+            <td>
+                <form th:action="@{/orders/{id}/delete(id=${item.id})}" method="post">
+                    <button type="submit">Delete</button>
+                </form>
+            </td>
+        </tr>
+    </table><br/><a href="/">Back to Home</a>
+</body>
+</html>

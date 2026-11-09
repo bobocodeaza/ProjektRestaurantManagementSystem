@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Customer List</title></head>
+<body>
+    <h1>Customer Management</h1>
+    <a th:href="@{/customers/new}">Create New Customer</a><br/><br/>
+    <table border="1">
+        <tr><th>ID</th><th>Name</th><th>Phone</th><th>Actions</th></tr>
+        <tr th:each="item : ${customers}">
+            <td th:text="${item.id}"></td><td th:text="${item.name}"></td><td th:text="${item.phoneNumber}"></td>
+            <td>
+                <form th:action="@{/customers/{id}/delete(id=${item.id})}" method="post">
+                    <button type="submit">Delete</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <br/><a href="/">Back to Home</a>
+</body>
+</html>
