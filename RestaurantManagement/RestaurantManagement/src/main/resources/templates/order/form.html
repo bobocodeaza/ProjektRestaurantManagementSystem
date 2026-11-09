@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>New Order</title></head>
+<body>
+    <h1>Create Order</h1>
+    <form th:action="@{/orders}" method="post">
+        <label>Select Customer:</label>
+        <select name="customerId" required>
+            <option th:each="c : ${customers}" th:value="${c.id}" th:text="${c.name}"></option>
+        </select><br/><br/>
+        
+        <label>Select Table:</label>
+        <select name="tableId" required>
+            <option th:each="t : ${tables}" th:value="${t.id}" th:text="${t.number}"></option>
+        </select><br/><br/>
+        
+        <button type="submit">Create Order</button>
+    </form><br/><a th:href="@{/orders}">Cancel</a>
+</body>
+</html>
