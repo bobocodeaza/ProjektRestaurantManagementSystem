@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Table Details</title></head>
+<body>
+    <h1>Table Details</h1>
+    <p><strong>ID:</strong> <span th:text="${table.id}"></span></p>
+    <p><strong>Table Number:</strong> <span th:text="${table.number}"></span></p>
+    <p><strong>Capacity:</strong> <span th:text="${table.capacity}"></span></p>
+    <p><strong>Status:</strong> <span th:text="${table.occupiedStatus}"></span></p>
+    <p><strong>Order IDs:</strong> <span th:text="${table.orders}"></span></p>
+    <br/>
+    <a th:href="@{/tables/{id}/edit(id=${table.id})}">Edit</a> |
+    <a th:href="@{/tables}">Back to List</a>
+</body>
+</html>

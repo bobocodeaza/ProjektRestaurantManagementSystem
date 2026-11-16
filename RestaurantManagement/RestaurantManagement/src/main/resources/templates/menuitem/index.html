@@ -1,20 +1,34 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head><title>MenuItem List</title></head>
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Item List</title>
+</head>
 <body>
-    <h1>MenuItem Management</h1>
-    <a th:href="@{/menuitems/new}">Create New MenuItem</a><br/><br/>
-    <table border="1">
-        <tr><th>ID</th><th>Name</th><th>Price</th><th>Category</th><th>Actions</th></tr>
+    <h1>Menu Item Management</h1>
+    <a th:href="@{/menuitems/new}">Create New Menu Item</a><br/><br/>
+    <table border="1" cellpadding="6">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Actions</th>
+        </tr>
         <tr th:each="item : ${items}">
-            <td th:text="${item.id}"></td><td th:text="${item.name}"></td><td th:text="${item.price}"></td><td th:text="${item.category}"></td>
+            <td th:text="${item.id}"></td>
+            <td th:text="${item.name}"></td>
+            <td th:text="${item.price}"></td>
+            <td th:text="${item.category}"></td>
             <td>
-                <form th:action="@{/menuitems/{id}/delete(id=${item.id})}" method="post">
+                <a th:href="@{/menuitems/{id}(id=${item.id})}">Details</a> |
+                <a th:href="@{/menuitems/{id}/edit(id=${item.id})}">Edit</a> |
+                <form th:action="@{/menuitems/{id}/delete(id=${item.id})}" method="post" style="display:inline;">
                     <button type="submit">Delete</button>
                 </form>
             </td>
         </tr>
     </table>
-    <br/><a href="/">Back to Home</a>
+    <br/><a th:href="@{/}">Back to Home</a>
 </body>
 </html>

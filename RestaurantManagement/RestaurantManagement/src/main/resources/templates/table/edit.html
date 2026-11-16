@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Edit Table</title></head>
+<body>
+    <h1>Edit Table</h1>
+    <form th:action="@{/tables/{id}(id=${table.id})}" method="post" th:object="${table}">
+        <input type="hidden" th:field="*{id}"/>
+        <label>Table Number:</label><input type="number" th:field="*{number}" required/><br/><br/>
+        <label>Capacity:</label><input type="number" th:field="*{capacity}" required/><br/><br/>
+        <label>Status:</label>
+        <select th:field="*{occupiedStatus}">
+            <option th:each="st : ${statuses}" th:value="${st}" th:text="${st}"></option>
+        </select><br/><br/>
+        <button type="submit">Update</button>
+    </form>
+    <br/><a th:href="@{/tables}">Cancel</a>
+</body>
+</html>

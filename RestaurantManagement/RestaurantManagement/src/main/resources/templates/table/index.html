@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head><title>Table List</title></head>
+<head><meta charset="UTF-8"><title>Table List</title></head>
 <body>
     <h1>Table Management</h1>
     <a th:href="@{/tables/new}">Create New Table</a><br/><br/>
-    <table border="1">
-        <tr><th>ID</th><th>Table Number</th><th>Capacity</th><th>Status (FREE/OCCUPIED)</th><th>Actions</th></tr>
+    <table border="1" cellpadding="6">
+        <tr>
+            <th>ID</th>
+            <th>Number</th>
+            <th>Capacity</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
         <tr th:each="item : ${tables}">
-            <td th:text="${item.id}"></td><td th:text="${item.number}"></td><td th:text="${item.capacity}"></td><td th:text="${item.occupiedStatus}"></td>
+            <td th:text="${item.id}"></td>
+            <td th:text="${item.number}"></td>
+            <td th:text="${item.capacity}"></td>
+            <td th:text="${item.occupiedStatus}"></td>
             <td>
-                <form th:action="@{/tables/{id}/delete(id=${item.id})}" method="post">
+                <a th:href="@{/tables/{id}(id=${item.id})}">Details</a> |
+                <a th:href="@{/tables/{id}/edit(id=${item.id})}">Edit</a> |
+                <form th:action="@{/tables/{id}/delete(id=${item.id})}" method="post" style="display:inline;">
                     <button type="submit">Delete</button>
                 </form>
             </td>
         </tr>
     </table>
-    <br/><a href="/">Back to Home</a>
+    <br/><a th:href="@{/}">Back to Home</a>
 </body>
 </html>
