@@ -1,0 +1,82 @@
+[
+  {
+    "id": "cust-001",
+    "name": "Andrei Popescu",
+    "phoneNumber": "+40 721 101 001",
+    "orders": [
+      "ord-001"
+    ]
+  },
+  {
+    "id": "cust-002",
+    "name": "Elena Ionescu",
+    "phoneNumber": "+40 721 101 002",
+    "orders": [
+      "ord-002"
+    ]
+  },
+  {
+    "id": "cust-003",
+    "name": "Mihai Dumitrescu",
+    "phoneNumber": "+40 721 101 003",
+    "orders": [
+      "ord-003"
+    ]
+  },
+  {
+    "id": "cust-004",
+    "name": "Ioana Stan",
+    "phoneNumber": "+40 721 101 004",
+    "orders": [
+      "ord-004"
+    ]
+  },
+  {
+    "id": "cust-005",
+    "name": "Alexandru Radu",
+    "phoneNumber": "+40 721 101 005",
+    "orders": [
+      "ord-005"
+    ]
+  },
+  {
+    "id": "cust-006",
+    "name": "Maria Munteanu",
+    "phoneNumber": "+40 721 101 006",
+    "orders": [
+      "ord-006"
+    ]
+  },
+  {
+    "id": "cust-007",
+    "name": "Cristian Gheorghe",
+    "phoneNumber": "+40 721 101 007",
+    "orders": [
+      "ord-007"
+    ]
+  },
+  {
+    "id": "cust-008",
+    "name": "Laura Moldovan",
+    "phoneNumber": "+40 721 101 008",
+    "orders": [
+      "ord-008"
+    ]
+  },
+  {
+    "id": "cust-009",
+    "name": "Stefan Marin",
+    "phoneNumber": "+40 721 101 009",
+    "orders": [
+      "ord-009"
+    ]
+  },
+  {
+    "id": "cust-010",
+    "name": "Diana Tudor",
+    "phoneNumber": "+40 721 101 010",
+    "orders": [
+      "ord-010"
+    ]
+  }
+]

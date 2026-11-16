@@ -1,0 +1,52 @@
+[
+  {
+    "id": "srv-001",
+    "name": "Bogdan Nistor",
+    "designation": "Head Waiter"
+  },
+  {
+    "id": "srv-002",
+    "name": "Raluca Vasile",
+    "designation": "Sommelier"
+  },
+  {
+    "id": "srv-003",
+    "name": "George Enache",
+    "designation": "Senior Server"
+  },
+  {
+    "id": "srv-004",
+    "name": "Bianca Dobre",
+    "designation": "Terrace Server"
+  },
+  {
+    "id": "srv-005",
+    "name": "Tudor Oprea",
+    "designation": "Junior Server"
+  },
+  {
+    "id": "srv-006",
+    "name": "Alina Lazar",
+    "designation": "VIP Lounge Server"
+  },
+  {
+    "id": "srv-007",
+    "name": "Razvan Florea",
+    "designation": "Barista & Drinks"
+  },
+  {
+    "id": "srv-008",
+    "name": "Cristina Preda",
+    "designation": "Shift Supervisor"
+  },
+  {
+    "id": "srv-009",
+    "name": "Paul Sandu",
+    "designation": "Banquet Server"
+  },
+  {
+    "id": "srv-010",
+    "name": "Teodora Neagu",
+    "designation": "Hostess & Server"
+  }
+]

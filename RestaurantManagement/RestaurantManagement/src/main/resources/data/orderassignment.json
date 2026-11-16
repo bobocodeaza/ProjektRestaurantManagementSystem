@@ -1,0 +1,52 @@
+[
+  {
+    "id": "asg-001",
+    "orderId": "ord-001",
+    "staffId": "srv-001"
+  },
+  {
+    "id": "asg-002",
+    "orderId": "ord-002",
+    "staffId": "chef-002"
+  },
+  {
+    "id": "asg-003",
+    "orderId": "ord-003",
+    "staffId": "chef-001"
+  },
+  {
+    "id": "asg-004",
+    "orderId": "ord-004",
+    "staffId": "srv-002"
+  },
+  {
+    "id": "asg-005",
+    "orderId": "ord-005",
+    "staffId": "chef-005"
+  },
+  {
+    "id": "asg-006",
+    "orderId": "ord-006",
+    "staffId": "chef-003"
+  },
+  {
+    "id": "asg-007",
+    "orderId": "ord-007",
+    "staffId": "srv-003"
+  },
+  {
+    "id": "asg-008",
+    "orderId": "ord-008",
+    "staffId": "srv-004"
+  },
+  {
+    "id": "asg-009",
+    "orderId": "ord-009",
+    "staffId": "srv-007"
+  },
+  {
+    "id": "asg-010",
+    "orderId": "ord-010",
+    "staffId": "chef-004"
+  }
+]

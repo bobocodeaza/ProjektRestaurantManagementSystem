@@ -1,0 +1,52 @@
+[
+  {
+    "id": "chef-001",
+    "name": "Gordon Kovacs",
+    "specialization": "Grill & Steak"
+  },
+  {
+    "id": "chef-002",
+    "name": "Marco Rossi",
+    "specialization": "Italian Pasta & Pizza"
+  },
+  {
+    "id": "chef-003",
+    "name": "Claire Laurent",
+    "specialization": "Pastry & Desserts"
+  },
+  {
+    "id": "chef-004",
+    "name": "Kenji Takahashi",
+    "specialization": "Seafood & Sushi"
+  },
+  {
+    "id": "chef-005",
+    "name": "Vladislav Petrescu",
+    "specialization": "Traditional Soups"
+  },
+  {
+    "id": "chef-006",
+    "name": "Sofia Alvarez",
+    "specialization": "Tapas & Appetizers"
+  },
+  {
+    "id": "chef-007",
+    "name": "Lukas Weber",
+    "specialization": "Sauces & Saute"
+  },
+  {
+    "id": "chef-008",
+    "name": "Ana-Maria Barbu",
+    "specialization": "Cold Kitchen & Salads"
+  },
+  {
+    "id": "chef-009",
+    "name": "Matteo Conti",
+    "specialization": "Wood-Fired Oven"
+  },
+  {
+    "id": "chef-010",
+    "name": "Daniela Stoica",
+    "specialization": "Vegan & Organic"
+  }
+]

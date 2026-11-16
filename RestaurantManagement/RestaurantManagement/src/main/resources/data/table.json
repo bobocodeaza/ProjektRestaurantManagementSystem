@@ -1,0 +1,92 @@
+[
+  {
+    "id": "tbl-001",
+    "number": 1,
+    "occupiedStatus": "OCCUPIED",
+    "capacity": 2,
+    "orders": [
+      "ord-001"
+    ]
+  },
+  {
+    "id": "tbl-002",
+    "number": 2,
+    "occupiedStatus": "FREE",
+    "capacity": 4,
+    "orders": [
+      "ord-002"
+    ]
+  },
+  {
+    "id": "tbl-003",
+    "number": 3,
+    "occupiedStatus": "OCCUPIED",
+    "capacity": 4,
+    "orders": [
+      "ord-003"
+    ]
+  },
+  {
+    "id": "tbl-004",
+    "number": 4,
+    "occupiedStatus": "FREE",
+    "capacity": 6,
+    "orders": [
+      "ord-004"
+    ]
+  },
+  {
+    "id": "tbl-005",
+    "number": 5,
+    "occupiedStatus": "OCCUPIED",
+    "capacity": 2,
+    "orders": [
+      "ord-005"
+    ]
+  },
+  {
+    "id": "tbl-006",
+    "number": 6,
+    "occupiedStatus": "FREE",
+    "capacity": 8,
+    "orders": [
+      "ord-006"
+    ]
+  },
+  {
+    "id": "tbl-007",
+    "number": 7,
+    "occupiedStatus": "OCCUPIED",
+    "capacity": 4,
+    "orders": [
+      "ord-007"
+    ]
+  },
+  {
+    "id": "tbl-008",
+    "number": 8,
+    "occupiedStatus": "FREE",
+    "capacity": 2,
+    "orders": [
+      "ord-008"
+    ]
+  },
+  {
+    "id": "tbl-009",
+    "number": 9,
+    "occupiedStatus": "OCCUPIED",
+    "capacity": 6,
+    "orders": [
+      "ord-009"
+    ]
+  },
+  {
+    "id": "tbl-010",
+    "number": 10,
+    "occupiedStatus": "FREE",
+    "capacity": 4,
+    "orders": [
+      "ord-010"
+    ]
+  }
+]

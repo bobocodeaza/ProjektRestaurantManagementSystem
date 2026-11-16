@@ -1,0 +1,167 @@
+[
+  {
+    "id": "ord-001",
+    "customerId": "cust-001",
+    "tableId": "tbl-001",
+    "status": "OPEN",
+    "orderLines": [
+      {
+        "id": "line-001",
+        "menuItemId": "menu-001",
+        "quantity": 2.0
+      }
+    ],
+    "assignments": [
+      "asg-001"
+    ]
+  },
+  {
+    "id": "ord-002",
+    "customerId": "cust-002",
+    "tableId": "tbl-002",
+    "status": "CLOSED",
+    "orderLines": [
+      {
+        "id": "line-002",
+        "menuItemId": "menu-002",
+        "quantity": 1.0
+      },
+      {
+        "id": "line-003",
+        "menuItemId": "menu-008",
+        "quantity": 2.0
+      }
+    ],
+    "assignments": [
+      "asg-002"
+    ]
+  },
+  {
+    "id": "ord-003",
+    "customerId": "cust-003",
+    "tableId": "tbl-003",
+    "status": "OPEN",
+    "orderLines": [
+      {
+        "id": "line-004",
+        "menuItemId": "menu-003",
+        "quantity": 1.0
+      }
+    ],
+    "assignments": [
+      "asg-003"
+    ]
+  },
+  {
+    "id": "ord-004",
+    "customerId": "cust-004",
+    "tableId": "tbl-004",
+    "status": "CLOSED",
+    "orderLines": [
+      {
+        "id": "line-005",
+        "menuItemId": "menu-004",
+        "quantity": 2.0
+      }
+    ],
+    "assignments": [
+      "asg-004"
+    ]
+  },
+  {
+    "id": "ord-005",
+    "customerId": "cust-005",
+    "tableId": "tbl-005",
+    "status": "OPEN",
+    "orderLines": [
+      {
+        "id": "line-006",
+        "menuItemId": "menu-005",
+        "quantity": 3.0
+      }
+    ],
+    "assignments": [
+      "asg-005"
+    ]
+  },
+  {
+    "id": "ord-006",
+    "customerId": "cust-006",
+    "tableId": "tbl-006",
+    "status": "CLOSED",
+    "orderLines": [
+      {
+        "id": "line-007",
+        "menuItemId": "menu-006",
+        "quantity": 2.0
+      }
+    ],
+    "assignments": [
+      "asg-006"
+    ]
+  },
+  {
+    "id": "ord-007",
+    "customerId": "cust-007",
+    "tableId": "tbl-007",
+    "status": "OPEN",
+    "orderLines": [
+      {
+        "id": "line-008",
+        "menuItemId": "menu-007",
+        "quantity": 1.0
+      }
+    ],
+    "assignments": [
+      "asg-007"
+    ]
+  },
+  {
+    "id": "ord-008",
+    "customerId": "cust-008",
+    "tableId": "tbl-008",
+    "status": "CLOSED",
+    "orderLines": [
+      {
+        "id": "line-009",
+        "menuItemId": "menu-008",
+        "quantity": 4.0
+      }
+    ],
+    "assignments": [
+      "asg-008"
+    ]
+  },
+  {
+    "id": "ord-009",
+    "customerId": "cust-009",
+    "tableId": "tbl-009",
+    "status": "OPEN",
+    "orderLines": [
+      {
+        "id": "line-010",
+        "menuItemId": "menu-009",
+        "quantity": 2.0
+      }
+    ],
+    "assignments": [
+      "asg-009"
+    ]
+  },
+  {
+    "id": "ord-010",
+    "customerId": "cust-010",
+    "tableId": "tbl-010",
+    "status": "CLOSED",
+    "orderLines": [
+      {
+        "id": "line-011",
+        "menuItemId": "menu-010",
+        "quantity": 1.0
+      }
+    ],
+    "assignments": [
+      "asg-010"
+    ]
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "menu-001",
+    "name": "Margherita Pizza",
+    "price": 34.0,
+    "category": "Main Course"
+  },
+  {
+    "id": "menu-002",
+    "name": "Spaghetti Carbonara",
+    "price": 42.0,
+    "category": "Pasta"
+  },
+  {
+    "id": "menu-003",
+    "name": "Grilled Ribeye Steak",
+    "price": 89.0,
+    "category": "Grill"
+  },
+  {
+    "id": "menu-004",
+    "name": "Caesar Salad",
+    "price": 32.0,
+    "category": "Salad"
+  },
+  {
+    "id": "menu-005",
+    "name": "Tomato Basil Soup",
+    "price": 24.0,
+    "category": "Soup"
+  },
+  {
+    "id": "menu-006",
+    "name": "Tiramisu",
+    "price": 26.0,
+    "category": "Dessert"
+  },
+  {
+    "id": "menu-007",
+    "name": "Chocolate Lava Cake",
+    "price": 29.0,
+    "category": "Dessert"
+  },
+  {
+    "id": "menu-008",
+    "name": "Fresh Lemonade",
+    "price": 16.0,
+    "category": "Beverage"
+  },
+  {
+    "id": "menu-009",
+    "name": "Espresso Doppio",
+    "price": 12.0,
+    "category": "Coffee"
+  },
+  {
+    "id": "menu-010",
+    "name": "Grilled Salmon Fillet",
+    "price": 68.0,
+    "category": "Seafood"
+  }
+]

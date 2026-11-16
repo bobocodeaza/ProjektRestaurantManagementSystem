@@ -1,0 +1,52 @@
+[
+  {
+    "id": "bill-001",
+    "orderId": "ord-001",
+    "totalAmount": 68.0
+  },
+  {
+    "id": "bill-002",
+    "orderId": "ord-002",
+    "totalAmount": 74.0
+  },
+  {
+    "id": "bill-003",
+    "orderId": "ord-003",
+    "totalAmount": 89.0
+  },
+  {
+    "id": "bill-004",
+    "orderId": "ord-004",
+    "totalAmount": 64.0
+  },
+  {
+    "id": "bill-005",
+    "orderId": "ord-005",
+    "totalAmount": 72.0
+  },
+  {
+    "id": "bill-006",
+    "orderId": "ord-006",
+    "totalAmount": 52.0
+  },
+  {
+    "id": "bill-007",
+    "orderId": "ord-007",
+    "totalAmount": 29.0
+  },
+  {
+    "id": "bill-008",
+    "orderId": "ord-008",
+    "totalAmount": 64.0
+  },
+  {
+    "id": "bill-009",
+    "orderId": "ord-009",
+    "totalAmount": 24.0
+  },
+  {
+    "id": "bill-010",
+    "orderId": "ord-010",
+    "totalAmount": 68.0
+  }
+]
