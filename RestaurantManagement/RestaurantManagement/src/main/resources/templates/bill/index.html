@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Bill List</title></head>
+<body>
+    <h1>Bill Management</h1>
+    <a th:href="@{/bills/new}">Create New Bill</a><br/><br/>
+    <table border="1" cellpadding="6">
+        <tr>
+            <th>ID</th>
+            <th>Order ID</th>
+            <th>Total Amount</th>
+            <th>Actions</th>
+        </tr>
+        <tr th:each="item : ${bills}">
+            <td th:text="${item.id}"></td>
+            <td th:text="${item.orderId}"></td>
+            <td th:text="${item.totalAmount}"></td>
+            <td>
+                <a th:href="@{/bills/{id}(id=${item.id})}">Details</a> |
+                <a th:href="@{/bills/{id}/edit(id=${item.id})}">Edit</a> |
+                <form th:action="@{/bills/{id}/delete(id=${item.id})}" method="post" style="display:inline;">
+                    <button type="submit">Delete</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+    <br/><a th:href="@{/}">Back to Home</a>
+</body>
+</html>

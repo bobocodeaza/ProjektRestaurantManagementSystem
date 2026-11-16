@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Order Details</title></head>
+<body>
+    <h1>Order Details</h1>
+    <p><strong>Order ID:</strong> <span th:text="${order.id}"></span></p>
+    <p><strong>Customer:</strong> <span th:text="${customer != null ? customer.name : order.customerId}"></span></p>
+    <p><strong>Table:</strong> <span th:text="${table != null ? 'Table ' + table.number : order.tableId}"></span></p>
+    <p><strong>Status:</strong> <span th:text="${order.status}"></span></p>
+
+    <h3>Order Lines</h3>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>Line ID</th>
+            <th>Menu Item ID</th>
+            <th>Quantity</th>
+        </tr>
+        <tr th:each="line : ${order.orderLines}">
+            <td th:text="${line.id}"></td>
+            <td th:text="${line.menuItemId}"></td>
+            <td th:text="${line.quantity}"></td>
+        </tr>
+    </table>
+
+    <div th:if="${order.status.name() == 'OPEN'}">
+        <h3>Add Menu Item to Order</h3>
+        <form th:action="@{/orders/{id}/add-item(id=${order.id})}" method="post">
+            <label>Menu Item:</label>
+            <select name="menuItemId" required>
+                <option th:each="m : ${menuItems}" th:value="${m.id}" th:text="${m.name + ' - ' + m.price}"></option>
+            </select>
+            <label>Quantity:</label>
+            <input type="number" step="1" min="1" name="quantity" value="1" required/>
+            <button type="submit">Add Item</button>
+        </form>
+        <br/>
+        <form th:action="@{/orders/{id}/generate-bill(id=${order.id})}" method="post">
+            <button type="submit">Close Order &amp; Generate Bill</button>
+        </form>
+    </div>
+
+    <br/>
+    <a th:href="@{/orders/{id}/edit(id=${order.id})}">Edit Order</a> |
+    <a th:href="@{/orders}">Back to List</a>
+</body>
+</html>

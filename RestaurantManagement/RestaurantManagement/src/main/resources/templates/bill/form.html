@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>New Bill</title></head>
+<body>
+    <h1>Create New Bill</h1>
+    <form th:action="@{/bills}" method="post" th:object="${bill}">
+        <label>Order:</label>
+        <select th:field="*{orderId}" required>
+            <option th:each="o : ${orders}" th:value="${o.id}" th:text="${o.id + ' (' + o.status + ')'}"></option>
+        </select><br/><br/>
+        <label>Total Amount:</label><input type="number" step="0.01" th:field="*{totalAmount}" required/><br/><br/>
+        <button type="submit">Save</button>
+    </form>
+    <br/><a th:href="@{/bills}">Cancel</a>
+</body>
+</html>

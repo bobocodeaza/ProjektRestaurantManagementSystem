@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html>
-<head><title>Restaurant Management Dashboard</title></head>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Management System</title>
+</head>
 <body>
-    <h1>Restaurant Management Dashboard</h1>
+    <h1>Restaurant Management Dashboard (JSON Persistence)</h1>
     <ul>
-        <li><a href="/customers">Manage Customers</a></li>
-        <li><a href="/tables">Manage Tables</a></li>
-        <li><a href="/menuitems">Manage Menu Items</a></li>
-        <li><a href="/chefs">Manage Chefs</a></li>
-        <li><a href="/servers">Manage Servers</a></li>
-        <li><a href="/orders">Manage Orders</a></li>
+        <li><a th:href="@{/customers}">Manage Customers</a></li>
+        <li><a th:href="@{/tables}">Manage Tables</a></li>
+        <li><a th:href="@{/menuitems}">Manage Menu Items</a></li>
+        <li><a th:href="@{/chefs}">Manage Chefs</a></li>
+        <li><a th:href="@{/servers}">Manage Servers</a></li>
+        <li><a th:href="@{/orders}">Manage Orders</a></li>
+        <li><a th:href="@{/bills}">Manage Bills</a></li>
+        <li><a th:href="@{/assignments}">Manage Order Assignments</a></li>
     </ul>
 </body>
 </html>

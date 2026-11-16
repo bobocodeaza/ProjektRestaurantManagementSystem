@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Edit Order</title></head>
+<body>
+    <h1>Edit Order</h1>
+    <form th:action="@{/orders/{id}(id=${order.id})}" method="post">
+        <label>Customer:</label>
+        <select name="customerId" required>
+            <option th:each="c : ${customers}"
+                    th:value="${c.id}"
+                    th:text="${c.name + ' (' + c.id + ')'}"
+                    th:selected="${c.id == order.customerId}"></option>
+        </select><br/><br/>
+
+        <label>Table:</label>
+        <select name="tableId" required>
+            <option th:each="t : ${tables}"
+                    th:value="${t.id}"
+                    th:text="${'Table ' + t.number}"
+                    th:selected="${t.id == order.tableId}"></option>
+        </select><br/><br/>
+
+        <label>Status:</label>
+        <select name="status" required>
+            <option th:each="st : ${statuses}"
+                    th:value="${st}"
+                    th:text="${st}"
+                    th:selected="${st == order.status}"></option>
+        </select><br/><br/>
+
+        <button type="submit">Update Order</button>
+    </form>
+    <br/><a th:href="@{/orders}">Cancel</a>
+</body>
+</html>

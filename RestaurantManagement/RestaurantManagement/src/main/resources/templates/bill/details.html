@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Bill Details</title></head>
+<body>
+    <h1>Bill Details</h1>
+    <p><strong>ID:</strong> <span th:text="${bill.id}"></span></p>
+    <p><strong>Order ID:</strong> <span th:text="${bill.orderId}"></span></p>
+    <p><strong>Total Amount:</strong> <span th:text="${bill.totalAmount}"></span></p>
+    <br/>
+    <a th:href="@{/bills/{id}/edit(id=${bill.id})}">Edit</a> |
+    <a th:href="@{/bills}">Back to List</a>
+</body>
+</html>
