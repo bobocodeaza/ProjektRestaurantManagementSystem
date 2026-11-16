@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Order Assignment Details</title></head>
+<body>
+    <h1>Order Assignment Details</h1>
+    <p><strong>ID:</strong> <span th:text="${assignment.id}"></span></p>
+    <p><strong>Order ID:</strong> <span th:text="${assignment.orderId}"></span></p>
+    <p><strong>Staff ID:</strong> <span th:text="${assignment.staffId}"></span></p>
+    <br/>
+    <a th:href="@{/assignments/{id}/edit(id=${assignment.id})}">Edit</a> |
+    <a th:href="@{/assignments}">Back to List</a>
+</body>
+</html>

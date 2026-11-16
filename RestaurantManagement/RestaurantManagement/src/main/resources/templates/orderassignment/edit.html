@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><meta charset="UTF-8"><title>Edit Order Assignment</title></head>
+<body>
+    <h1>Edit Order Assignment</h1>
+    <form th:action="@{/assignments/{id}(id=${assignment.id})}" method="post" th:object="${assignment}">
+        <input type="hidden" th:field="*{id}"/>
+        <label>Order:</label>
+        <select th:field="*{orderId}" required>
+            <option th:each="o : ${orders}" th:value="${o.id}" th:text="${o.id + ' (' + o.status + ')'}"></option>
+        </select><br/><br/>
+        <label>Staff Member:</label>
+        <select th:field="*{staffId}" required>
+            <option th:each="s : ${staffList}" th:value="${s.id}" th:text="${s.name + ' (' + s.id + ')'}"></option>
+        </select><br/><br/>
+        <button type="submit">Update</button>
+    </form>
+    <br/><a th:href="@{/assignments}">Cancel</a>
+</body>
+</html>

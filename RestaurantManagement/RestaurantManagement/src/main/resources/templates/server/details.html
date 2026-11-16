@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Server Details</title>
+</head>
+<body>
+    <h1>Server Details</h1>
+    <p><strong>ID:</strong> <span th:text="${server.id}"></span></p>
+    <p><strong>Name:</strong> <span th:text="${server.name}"></span></p>
+    <p><strong>Designation:</strong> <span th:text="${server.designation}"></span></p>
+    <br/>
+    <a th:href="@{/servers/{id}/edit(id=${server.id})}">Edit</a> |
+    <a th:href="@{/servers}">Back to List</a>
+</body>
+</html>
